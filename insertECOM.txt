@@ -1,0 +1,93 @@
+INSERT INTO `products` (`ProductID`, `Productsku`, `ProductName`, `ProductPrice`, `ProductWeight`, `ProductDesc`, `ProductThumbnail`, `ProductImage`, `ProductCategory`, `ProductCreate_date`, `ProductStock`) 
+VALUES ('1', 'TS001', 'Cotton T-shirt', '300', '2', 'A light cotton T-Shirt made with 100% real cotton. Made right here in the USA for over 15 years, this t-shirt is lightweight and durable.', 'D. i. e. t. did i eat that', 'IMG001', 'Mens', '2019/12/21', '15'), 
+('2', 'TR003', 'Track Pant', '450', '2.5', 'Track Pants are a casual variety of soft trousers intended for comfort or athletic purposes, although they are now worn in many different situations. In the US they are known as sweatpants. In Australia, they are also commonly known as trackpants, trackies or tracky daks.', 'Wear and Wander', 'IMG002', 'Mens', '2019/06/15', '17'), 
+('3', 'FST004', 'Full Sleeves Tshirt', '600', '3', 'Full sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensi.ve fabric and are direct-to-garment digital printing technology using full color artwork.', 'You get served what you deserve', 'IMG003', 'Mens', '2020/02/02', '12'),
+('4', 'L001', 'Libas', '800', '3', 'Black embroidered woven A-line dress, has a keyhole neck, three-quarter sleeves, hook and eye closure, and flared hem and regular fit', 'Fashion you wear for', 'IMG004', 'Women', '2020/05/16', '8'),
+('5', 'TS003', 'Tshirt', '600', '2', 'Yellow and Black printed T-shirt, has a round neck, and short sleeves.\r\n100% cotton\r\nMachine Wash', 'Difference of Opinion', 'IMG005', 'Women', '2019/06/30', '27'), 
+('6', 'RD001', 'Roadster', '1200', '2.5', 'Olive green T-shirt, has a round neck, short sleeves,\r\nRegular Fit\r\n100% cotton\r\nMachine-wash', 'Ride your way through', 'IMG006', 'Women', '2019/12/12', '11'), 
+('7', 'SR001', 'Saree', '1800', '4', 'Magenta pink solid saree and has a zari border\r\nThe saree comes with an unstitched blouse piece.\r\nOrnamentation:\r\nZari work is known for the art of weaving threads in golden and silver colours. It involves the process of twisting a flattened metallic strip, which sometimes is made from pure gold and silver.', 'The Beauty you admire for', 'IMG007', 'Women', '2021/01/18', '7'), 
+('8', 'S100', 'Kids Shorts', '700', '1.5', 'Khaki solid mid-rise chino shorts, has 4 pockets, and button closure.98% cotton and 2% elastane\r\nMachine-wash.', '\r\nBoys Khaki Solid Regular Fit Chino Shorts', 'IMG008', 'Kids', '2021/01/25', '21'),
+('9', 'S120', 'HRX by Hrithik', '800', '2', 'The HRX Girls Athleisure Shorts offer the best of comfort, style and durability. Cut from bio washed fabrics, these shorts are so soft that you\'ll wan to wear them everywhere you go.\r\n\r\nFeatures\r\nBio washed cotton feels soft against the skin.\r\nLength: Knee Length\r\nDesign: Solid with typographic detailing\r\nColour: Blue \r\nFit: Regular fit', 'HRX', 'IMG009', 'Kids', '2020/10/15', '27'),
+('10', 'KD100', 'H&M', '1400', '2', 'Joggers in soft cotton sweatshirt fabric with concealed elastication and a drawstring at the waist, side pockets and ribbing at the hems.\r\nSize & Fit-\r\nJoggers in soft cotton sweatshirt fabric with concealed elastication and a drawstring at the waist, side pockets and ribbing at the hems.', 'Rock and Roll', 'IMG010', 'Kids', '2019/11/11', '13');
+
+
+
+
+INSERT INTO `customers` (`CustID`, `CustEmail`, `Password`, `Full_Name`, `Billing_Address`, `DF_Shipping_Address`, `CustCountry`, `Phone`) 
+VALUES ('01', 'abhinay@gmail.com', 'abhinay', 'Abhinay Bhosale', '35 Mandir Marg\r\nNEW DELHI 110 001.', 'Department of Posts\r\nBusiness Development Directorate\r\nDak Bhavan\r\nParliament Street\r\nNEW DELHI 110001\r\nINDIA', 'India', '2578967'), 
+('02', 'akash@gmail.com', 'akash', 'Akash Devgire', 'Public Health Engineering Division- 1\r\nPublic office Building\r\nMuseum Road\r\nTHIRUVANAMTHPURAM\r\nKerala 695 033', 'Island Club Resort Private Limited, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2275896'), 
+('03', 'prasad@gmail.com', 'prasad', 'Prasad Banarase', '21, Temple Street\r\nBUKKAPATNAM PO\r\nAnantapur District\r\nAndhra Pradesh 515 144', 'Royal Banquet, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2277896'), 
+('04', 'suyog@gmail.com', 'suyog', 'Suyog Chavan', 'Village Govindpur\r\nPO Karimnagar\r\nPRASARPUR\r\nBankura District\r\nWest bengal 748 027', 'Arihant Electric & Hardware Stores, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2236541'),
+('05', 'joel@gmail.com', 'joel', 'Joel Castelino', 'Modern Engineering Company\r\nPost Box 3254\r\nCHENNAI\r\nTamil Nadu 600 002', 'Dudh Dairy, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2257896'),
+('06', 'brian@gmail.com', 'brian', 'Brian Lawrence', 'IC 12345 \r\n7 Rajput\r\nC/o 56 APO', 'M M Chemist & General Store, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2278932'), 
+('07', 'hadid@gmail.com', 'hadid', 'Hadid Khan', 'INS BALSARA\r\nC/o FMO Mumbai', 'Keerti Computer Institute, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2278546'), 
+('08', 'prathamesh@gmail.com', 'prathamesh', 'Prathamesh Sutar', 'JC 245106D \r\n5 Gorkha Rifles\r\nC/o 56 APO', 'Hotel Sai Palace Grand, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2578965'), 
+('09', 'nishant@gmail.com', 'nishant', 'Nishant Shetty', 'Flat No. 100\r\nTriveni Apartments\r\nPitam Pura\r\nNEW DELHI 110034 \r\nINDIA\r\n', 'Colibri-Humming Wood Goa, Red Cross Street, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2256985'),
+('10', 'amey@gmail.com', 'amey', 'Amey Panchal', 'Ispat Bhavan\r\nLodhi Road\r\nNEW DELHI \r\n110003\r\nINDIA\r\n\r\n', 'Om Sai Vadapav & Dosa Centre, Madhavdas Gaanga Path, Mumbai Central, Mumbai, Maharashtra, 400008, IND', 'India', '2233654');
+
+
+
+
+
+INSERT INTO `options` (`Option_ID`, `Option_Name`) 
+VALUES ('1', 'Red'), ('2', 'Blue'),
+ ('3', 'Green'), ('4', 'Black'),
+ ('5', 'White'),('6', 'S'), 
+('7', 'M'), ('8', 'L'),
+ ('9', 'XL'), ('10', 'XXL');
+
+
+
+
+
+INSERT INTO `categories` (`Category_ID`, `Cat_Name`, `Cat_Desc`, `Cat_Thumbnail`) 
+VALUES ('1', 'MensWear', 'They are one step down from the formal wear. They include business suits, dress shirts and pants and ties for men. They are complemented with leather shoes and belts.', 'Clothes for Men'),
+('2', 'MensWear', 'They are one step down from the formal wear. They include business suits, dress shirts and pants and ties for men. They are complemented with leather shoes and belts.', 'Clothes for Men'), 
+('3', 'MensWear', 'They are one step down from the formal wear. They include business suits, dress shirts and pants and ties for men. They are complemented with leather shoes and belts.', 'Clothes for Men'),
+('4', 'WomenWear', 'Clothing is part of the apparel category. In the women\'s clothes guide section, we categories various silhouettes of clothes.You can women\'s pants, women\'s shoes, women\'s t-shirts, etc.', 'Clothes for Women'),
+('5', 'Womenswear', 'Clothing is part of the apparel category. In the women\'s clothes guide section, we categories various silhouettes of clothes.You can women\'s pants, women\'s shoes, women\'s t-shirts, etc.', 'Clothes for Women'), 
+('6', 'WomensWear', 'Clothing is part of the apparel category. In the women\'s clothes guide section, we categories various silhouettes of clothes.You can women\'s pants, women\'s shoes, women\'s t-shirts, etc.', 'Clothes for Women'), 
+('7', 'KidsWear', 'Children\'s clothing or kids\' clothing is clothing for children who have not yet grown to full height. Children\'s clothing is often more casual than adult clothing, fit for play and rest', 'Clothes for Kids'), 
+('8', 'KIdsWear', 'Children\'s clothing or kids\' clothing is clothing for children who have not yet grown to full height. Children\'s clothing is often more casual than adult clothing, fit for play and rest', 'Clothes for Kids'), 
+('9', 'KidsWear', 'Children\'s clothing or kids\' clothing is clothing for children who have not yet grown to full height. Children\'s clothing is often more casual than adult clothing, fit for play and rest', 'Clothes for Kids'), 
+('10', 'KidsWear', 'Children\'s clothing or kids\' clothing is clothing for children who have not yet grown to full height. Children\'s clothing is often more casual than adult clothing, fit for play and rest', 'Clothes for Kids');
+
+
+
+
+INSERT INTO `orders` (`Order_ID`, `CustID`, `Amount`, `Shipping_Address`, `Order_address`, `Order_Email`, `Order_Date`, `Order_Status`) 
+VALUES ('1001', '1', '400', ' 2-5b, New Empire Indl Estate, Kondivita Rd, J B Nagar, Andheri (west)', ' 2-5b, New Empire Indl Estate, Kondivita Rd, J B Nagar, Andheri (west)', 'Null', '2020/12/17', 'DISPTACHED'), 
+('1002', '5', '600', '1214 C, Gali No 11, Delhi', '1214 C, Gali No 11, Delhi', 'Null', '2020/10/13', 'DISPTACHED'), 
+('1003', '10', '450', ' 121/122, New Sonal Indl Est, Marve Road, Malad(w)', ' 121/122, New Sonal Indl Est, Marve Road, Malad(w)', 'Null', '2020/05/31', 'DELIVERED'),
+('1004', '2', '800', 'Gomanth Dham, 358 Dr.bhadkamkar Road, Grant Road', 'Gomanth Dham, 358 Dr.bhadkamkar Road, Grant Road', 'Null', '2020/11/15', 'Shipped'), 
+('1005', '6', '700', '17 Nakhuda Street, Mandvi', '17 Nakhuda Street, Mandvi', 'Null', '2020/11/10', 'Shipped'),
+('1006', '9', '650', '1116, Kirti Shikhar Dist Cntr delhi', '1116, Kirti Shikhar Dist Cntr delhi', 'Null', '2020/10/31', 'Shipped'),
+('1007', '3', '850', ' C 57, Part 2, Lajpat Nagar', ' C 57, Part 2, Lajpat Nagar', 'Null', '2020/12/07', 'DELIVERED'), 
+('1008', '7', '950', ' 1004/5, 213, Raheja Chambers, Nariman Point Mumbai', ' 1004/5, 213, Raheja Chambers, Nariman Point Mumbai', 'Null', '2020/08/08', 'DELIVERED'),
+('1009', '8', '1500', ' Unit 8bldg9, Jogani Ind Estate, Pratiksha Nagar, Sion', ' Unit 8bldg9, Jogani Ind Estate, Pratiksha Nagar, Sion', 'Null', '2020/09/05', 'DISPTACHED'),
+('1010', '4', '1220', ' Office No 2, Dev Chhaya, M G Road, Oghadbhai Lane,rajawadi, Ghatkoper (east)', ' Office No 2, Dev Chhaya, M G Road, Oghadbhai Lane,rajawadi, Ghatkoper (east)', 'Null', '2020/09/21', 'DISPTACHED');
+
+
+
+INSERT INTO `order_details` (`Details_ID`, `Order_ID`, `ProductID`, `Details_Price`, `Details_sku`, `Details_Quantity`)
+ VALUES ('1', '1001', '1', '2250', 'DT001', '35'), ('2', '1002', '2', '3000', 'DT002', '45'),
+ ('3', '1003', '3', '2500', 'DT003', '25'), ('4', '1004', '4', '3000', 'DT004', '60'), 
+('5', '1005', '5', '5500', 'DT005', '55'), ('6', '1006', '6', '7500', 'DT006', '50'),
+ ('7', '1007', '7', '2100', 'DT007', '40'), ('8', '1008', '8', '2300', 'DT008', '26'), 
+('9', '1009', '9', '6500', 'DT009', '55'), ('10', '1010', '10', '4000', 'DT010', '35');
+
+
+INSERT INTO `product_categories` (`CategoryID`, `ProductID`, `Category_ID`)
+ VALUES ('01', '1', '3'), ('02', '2', '1'), 
+('03', '3', '3'), ('04', '4', '6'), 
+('05', '5', '4'), ('06', '6', '6'), 
+('07', '7', '8'), ('08', '8', '9'),
+ ('09', '9', '7'), ('10', '10', '10');
+
+
+INSERT INTO `product_options` (`ProductOptionID`, `Option_ID`, `ProductID`) 
+VALUES ('101', '1', '1'), ('102', '2', '2'), 
+('103', '3', '3'), ('104', '4', '4'),
+ ('105', '5', '5'), ('106', '6', '6'), 
+('107', '7', '7'), ('108', '8', '8'), 
+('109', '9', '9'), ('110', '10', '10');

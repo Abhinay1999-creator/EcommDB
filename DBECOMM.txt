@@ -1,0 +1,57 @@
+CREATE TABLE `products` ( `ProductID` INT(11) NOT NULL , `Productsku` VARCHAR(50) NOT NULL , 
+`ProductName` VARCHAR(50) NOT NULL , `ProductPrice` FLOAT NOT NULL , 
+`ProductWeight` FLOAT NOT NULL , `ProductDesc` VARCHAR(500) NOT NULL , 
+`ProductThumbnail` VARCHAR(100) NOT NULL , `ProductImage` VARCHAR(100) NOT NULL ,
+`ProductCategory` VARCHAR(50) NOT NULL ,
+`ProductCreate_date` DATE NOT NULL , `ProductStock` FLOAT NOT NULL , 
+ PRIMARY KEY (`ProductID`));
+
+
+
+CREATE TABLE `customers`(`CustID` INT(11) NOT NULL , `CustEmail` VARCHAR(20) NOT NULL , 
+`Password` VARCHAR(15) NOT NULL , `Full_Name` VARCHAR(25) NOT NULL , 
+`Billing_Address` VARCHAR(500) NOT NULL , `DF_Shipping_Address` VARCHAR(500) NOT NULL ,
+ `CustCountry` VARCHAR(35) NOT NULL , 
+`Phone` INT(15) NOT NULL , PRIMARY KEY (`CustID`));
+
+
+CREATE TABLE `options` ( `Option_ID` INT(11) NOT NULL , 
+`Option_Name` VARCHAR(50) NOT NULL , PRIMARY KEY (`Option_ID`));
+
+
+CREATE TABLE `categories` ( `Category_ID` INT(11) NOT NULL , `Cat_Name` VARCHAR(50) NOT NULL , 
+`Cat_Desc` VARCHAR(500) NOT NULL , 
+`Cat_Thumbnail` VARCHAR(100) NOT NULL , PRIMARY KEY (`Category_ID`));
+
+
+CREATE TABLE `order_details` ( `Details_ID` INT(11) NOT NULL , `Order_ID` INT(11) NOT NULL , 
+`ProductID` INT(11) NOT NULL , `Details_Price` FLOAT NOT NULL , 
+`Details_sku` VARCHAR(50) NOT NULL ,
+ `Details_Quantity` INT(11) NOT NULL ,
+ PRIMARY KEY (`Details_ID`));
+foreign key(Order_ID) references Orders (Order_ID),
+foreign key(ProductID) references Products (ProductID),
+) ;
+
+
+CREATE TABLE `orders` ( `Order_ID` INT(11) NOT NULL , `CustID` INT(11) NOT NULL , 
+`Amount` FLOAT NOT NULL , `Shipping_Address` VARCHAR(200) NOT NULL ,
+ `Order_address` VARCHAR(200) NOT NULL , `Order_Email` VARCHAR(50) NOT NULL ,
+ `Order_Date` DATE NOT NULL , `Order_Status` VARCHAR(80) NOT NULL , 
+PRIMARY KEY (`Order_ID`),
+foreign key(CustID) references customers (CustID)
+);
+
+
+CREATE TABLE `product_options` ( `ProductOptionID` INT(11) NOT NULL ,
+ `Option_ID` INT(11) NOT NULL , 
+`ProductID` INT(11) NOT NULL , PRIMARY KEY (`ProductOptionID`),
+foreign key(option_id) references options(option_id),
+foreign key(productid) references products(productid));
+
+
+CREATE TABLE `product_categories` ( `CategoryID` INT(11) NOT NULL , 
+`ProductID` INT(11) NOT NULL ,
+ `Category_ID` INT(11) NOT NULL , PRIMARY KEY (`CategoryID`),
+foreign key(productid) references products(productid),
+foreign key(category_id) references categories(category_id));
